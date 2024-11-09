@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { ChevronDown } from "lucide-react";
+//import { ChevronDown } from "lucide-react";
 
 type AccordionItem = {
   title: string;
@@ -89,11 +89,11 @@ export default function Accordion() {
               onClick={() => toggleAccordion(index)}
             >
               <span className="accordion-title">{item.title}</span>
-              <ChevronDown
-                className={`accordion-icon ${
+              
+               className={`accordion-icon ${
                   openIndex === index ? "rotated" : ""
                 }`}
-              />
+            
             </button>
             {openIndex === index && (
               <div
