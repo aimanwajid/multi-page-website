@@ -1,5 +1,5 @@
 import Image from "next/image";
-//import  Button from "@/components/Button";
+import  Button from "../components/Button";
 export default function lenders () {
     return(
         <div  className= "digital-loans">
@@ -22,7 +22,6 @@ export default function lenders () {
              <span>Coming soon Get in touch for more details.</span>
              </div>
              <Button className="contact-button"text="Get in touch" />
-             </div>
              <div>
                 <Image
                  className="bank-image"
@@ -32,6 +31,7 @@ export default function lenders () {
                  alt="Bank Pic"
                  priority={true}
                  />
+             </div>
              </div>
              </div>
              </div>
